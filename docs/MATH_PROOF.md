@@ -82,7 +82,7 @@ zurück, niemals undefiniertes Verhalten.
 ## 6. Bridge Lock-and-Mint Korrektheit
 
 ### Theorem 7: Keine doppelte Ausgabe über Bridge
-**Behauptung:** Ein ATC-Token kann nicht gleichzeitig auf A-TownChain
+**Behauptung:** Ein ATC Token kann nicht gleichzeitig auf A-TownChain
 und Ethereum existieren.
 
 **Beweis:**
