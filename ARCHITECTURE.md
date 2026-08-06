@@ -1,54 +1,37 @@
-# 🌳 Architektur — a-townchain-os-wiki
+# ARCHITECTURE.md — a-townchain-os
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** 59e5bf3
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 29 |
-| Zeilen | 3,979 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 27 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (23 files, 2,382 lines)
-│   ├── API.md (79 lines)
-│   ├── API_REFERENCE.md (50 lines)
-│   ├── ARCHITECTURE.md (155 lines)
-│   ├── BOTTLENECKS.md (50 lines)
-│   ├── COMMITS.md (73 lines)
-│   ├── CONTRIBUTING.md (19 lines)
-│   ├── DECENTRALIZED_PROOF.md (103 lines)
-│   ├── DEPENDENCIES.md (79 lines)
-│   ├── ENTERPRISE.md (65 lines)
-│   ├── ERRORS.md (79 lines)
-│   ├── ERROR_SOLUTIONS.md (128 lines)
-│   ├── FAQ.md (62 lines)
-│   ├── IMPROVEMENTS.md (61 lines)
-│   ├── ISSUES_TRACKER.md (107 lines)
-│   ├── MATH_PROOF.md (93 lines)
-│   ├── MODULES.md (703 lines)
-│   ├── QUICKSTART.md (30 lines)
-│   ├── ROADMAP.md (80 lines)
-│   ├── SECURITY.md (18 lines)
-│   ├── STATUS.md (25 lines)
-│   ├── SYNTAX.md (133 lines)
-│   ├── TODO.md (83 lines)
-│   └── WHITEPAPER.md (107 lines)
-├── .gitignore
-├── FILE_REGISTER.md (1491 lines)
-├── LICENSE
-├── README.md (65 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (33 lines)
+## File Tree
+```tree
+a-townchain-os/
+├── package.json               # Monorepo root package configuration
+├── README.md                 # Primary project overview and getting started
+├── REALITY_STATUS.md         # Ecosystem operational and development state
+├── backend/                  # Monorepo backend services, APIs, and microservices
+├── blockchain/               # Core blockchain engine, consensus, and state machine
+├── docs/                     # Architectural documentation, standards, and wiki
+│   ├── kai-os-wiki.md        # KAI-OS operational wiki and architecture reference
+│   └── standards/            # ATC platform standards specifications
+├── src/                      # Monorepo shared libraries and runtime code
+└── Dockerfile                # Containerized deployment manifest
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- package.json — Root manifest managing workspace packages and scripts
+- README.md — Monorepo overview, architecture quickstart, and project specs
+- REALITY_STATUS.md — Real-time tracking of implementation status across layers
+- backend/ — Backend services, API endpoints, database orchestration, and bus gateways
+- blockchain/ — Core blockchain protocol, consensus mechanism, EVM/ATC runtime, and state store
+- docs/ — System documentation repository including specs and guides
+- docs/kai-os-wiki.md — Comprehensive architectural wiki for KAI-OS / A-TownChain
+- docs/standards/ — ATC standard specifications (ATC-01 through ATC-99)
+- Dockerfile — Production deployment container specification
+
+## Build System
+- npm / Lerna / Yarn workspace monorepo build tools
+
+## Dependencies
+- Node.js, TypeScript, Python 3, Rust / Cargo
+
+## Status (Active/Migrated/Legacy)
+Active (TypeScript, Main Monorepo)
